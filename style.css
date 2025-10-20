@@ -114,11 +114,11 @@
 /* New Task */
 .todo__add-input {
     display: block;
-    margin: 0 0 20px;
+    margin: 20px 0px;
 }
 
 .todo__add-input {
-    width: 318px;
+    width: 100%;
 }
 
 /* Task list */
