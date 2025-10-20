@@ -1,3 +1,7 @@
+:root {
+    --input-width: 360px;
+}
+
 .page {
     background-color: #f8f8f8;
     color: #333;
@@ -43,9 +47,9 @@
     display: flex;
 }
 
-.todo__inProgress-list,
-.todo__completed-list {
-    margin: 0;
+#todo__unfinished-list,
+#todo__completed-list {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -139,11 +143,11 @@
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px;
+    width: var(--input-width);
 }
 
 .todo__item > .todo__input {
-    width: 226px;
+    width: var(--input-width);
 }
 
 .todo__icon {
@@ -167,11 +171,11 @@
     display: none;
 }
 
-#todo__completed-list .todo__input {
+.editMode .todo__input {
     display: inline-block;
-    width: 224px;
+    width: calc(var(--input-width) - 40px);
 }
 
-#todo__completed-list .todo__text {
+.editMode .todo__text {
     display: none;
 }
